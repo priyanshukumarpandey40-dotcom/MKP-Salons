@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website AI Chatbot</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 860px; margin: 24px auto; padding: 0 16px; }
+      .card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+      input, button { padding: 10px; font-size: 14px; }
+      input { width: calc(100% - 24px); margin-bottom: 10px; }
+      button { cursor: pointer; }
+      #messages { white-space: pre-wrap; background: #f7f7f7; border-radius: 8px; padding: 12px; min-height: 120px; }
+    </style>
+  </head>
+  <body>
+    <h1>Website AI Chatbot</h1>
+
+    <div class="card">
+      <h2>1) Ingest website</h2>
+      <input id="urlInput" placeholder="https://example.com" />
+      <button id="ingestBtn">Ingest</button>
+      <p id="ingestStatus"></p>
+    </div>
+
+    <div class="card">
+      <h2>2) Ask customer questions</h2>
+      <input id="questionInput" placeholder="What services do you offer?" />
+      <button id="askBtn">Ask</button>
+      <div id="messages"></div>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
